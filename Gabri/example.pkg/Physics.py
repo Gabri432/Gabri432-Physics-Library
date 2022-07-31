@@ -148,187 +148,187 @@ SILVER_EMISSIVITY = 0.05
 
 #Force formula
 def force(mass,acceleration):
-    print(mass*acceleration)
+    return mass*acceleration
 
 #Distance formula
 def distance(speed,time):
-    print(speed*time)
+    return speed*time
 
 #Speed formula
 def speed(distance,time):
-    print(distance/time)
+    return distance/time
 
 #Time formula
 def time(distance,speed):
-    print(distance/speed)
+    return distance/speed
 
 #Work formula
 def work(force,distance):
-    print(force*distance)
+    return force*distance
 
 #Acceleration formula
 def acceleration(force,mass):
-    print(force/mass)
+    return force/mass
 
 #Density formula
 def density(weight,volume):
-    print(weight/volume)
+    return weight/volume
 
 #Intensity formula
 def intensity(power,area):
-    print(power/area)
+    return power/area
 
 #Potential Energy formula
 def potential_Ener(mass,acceleration,height):
-    print(mass*acceleration*height)
+    return mass*acceleration*height
 
 #Kinetic Energy formula
 def kinetic_Ener(mass,speed):
-    print((1/2)*mass*(speed**2))
+    return (1/2)*mass*(speed**2)
 
 #Mechanic Energy formula
 def mechanical_Ener(potential,kinetic):
-    print(potential+kinetic)
+    return potential+kinetic
 
 #Momentum formula
 def momentum(mass,speed):
-    print(mass*speed)
+    return mass*speed
 
 #Power formula
 def power(work,time):
-    print(work/time)
+    return work/time
 
 #Potential Gravitational Energy
 def potent_GravEner(mass,height):
-    print(mass*GRAVITY*height)
+    return mass*GRAVITY*height
 
 #Potential Elastic Energy
 def potent_ElasticEner(elasticConstant,distance):
-    print((1/2)*elasticConstant*(distance**2))
+    return (1/2)*elasticConstant*(distance**2)
 
 #Poiseuille law 
 def law_Poiseuille(tubeRadius,pressureVariation,fluidViscosity,tubeLength):
-    print((3.1416*(radius**4)*pressureVariation)/(8*fluidViscosity*tubeLength))
+    return (3.1416*(radius**4)*pressureVariation)/(8*fluidViscosity*tubeLength)
 
 #Stokes law 
 def law_Stokes(fluidViscosity,radius,speed):
-    print((-6)*3.1416*fluidViscosity*radius*speed)
+    return (-6)*3.1416*fluidViscosity*radius*speed
 
 #Universal Gravitational Law (Gravitational Attraction Law)
 def grav_attract(mass1,mass2,distance):
-    print((G*mass1*mass2)/(distance**2))
+    return print(G*mass1*mass2)/(distance**2)
 
 #Gravitational Field from a point-like material
 def grav_Field(mass,distance):
-    print((G*mass)/(distance**2))
+    return (G*mass)/(distance**2)
 
 #Potential Gravitatonal Energy of an isolated system composed by two point-like materials, each with specific mass, at a specific distance separating them
 def potent_GravEner2(mass1,mass2,distance):
-    print(((-G)*mass1*mass2)/(radius))
+    return ((-G)*mass1*mass2)/(radius)
 
 #Escape Speed
 def escape_speed(mass,radius):
-    print(((G*mass)/(radius))*(0.5))
+    return ((G*mass)/(radius))*(0.5)
 
 #Gay-Lussac first law  (Volume variation)
 def law_Lussac1(volume,celsiusDeg_Temperature):
-    print(volume*(1+(1/273)*(celsiusDeg_Temperature)))
+    return volume*(1+(1/273)*(celsiusDeg_Temperature))
 
 #Gay-Lussac second law (Pressure Variation)
 def law_Lussac2(pressure,celsiusDeg_Temperature):
-    print(pressure*(1+(1/273)*(celsiusDeg_Temperaure)))
+    return pressure*(1+(1/273)*(celsiusDeg_Temperaure))
 
 #Fourier Law (of conduction)
 def law_Fourier(termicConducibility,area,kelvinDeg_HeatVariation,time,width):
-    print((termicConducibility*area*kelvinDeg_HeatVariation*time)/(width))
+    return (termicConducibility*area*kelvinDeg_HeatVariation*time)/(width)
 
 #Irradied Heat 
 def irradiedHeat(emissivity,area,kelvinDeg_CorpTemperature,kelvinEnviromentTemperature,time):
-    print(emissivity*STEFBOLTZ*area*(kelvinDeg_CorpTemperature-kelvinEnviromentTemperature)*time)
+    return emissivity*STEFBOLTZ*area*(kelvinDeg_CorpTemperature-kelvinEnviromentTemperature)*time
 
 #Doppler effect (when listener get closer to the sound source) 
 def doppler_A(speed,frequence):
-    print((1+(speed/340))*frequence)
+    return (1+(speed/340))*frequence
 
 #Doppler effect (when listener get far away from sound source)
 def doppler_B(speed,frequence):
-    print((1-(speed/340))*frequence)
+    return (1-(speed/340))*frequence
 
 #Coulomb law formula
 def law_Coulomb(charge1,charge2,distance):
-    print(coulomb*(((charge1*charge2)**2)**(0.5))/(distance**2))
+    return coulomb*(((charge1*charge2)**2)**(0.5))/(distance**2)
 
 #Gauss theorem, Flux of electric field
 def gauss_Flux(charge):
-    print(charge/DIELECTRIC)
+    return charge/DIELECTRIC
 
 #Electric Potential Energy on electric Field formula from a point-like charge
 def electPotent_Ener(charge1,charge2,distance):
-    print((charge1*charge2)/(4*3.1416*DIELECTRIC*distance))
+    return (charge1*charge2)/(4*3.1416*DIELECTRIC*distance)
 
 #Electric Potential Difference between two point from the charge position
 def electPotent_Diff(charge,distance1,distance2):
-    print((charge/(4*3.1416*DIELECTRIC))*((1/distance1)-(1/distance2)))
+    return (charge/(4*3.1416*DIELECTRIC))*((1/distance1)-(1/distance2))
 
 #Capacity of a conducer
 def capacity(charge,potential):
-    print(charge/potential)
+    return charge/potential
 
 #Density of energy of Electric Field
 def energy_Dens(electricFieldModule):
-    print((1/2)*DIELECTRIC*(electricFieldmodule**2))
+    return (1/2)*DIELECTRIC*(electricFieldmodule**2)
 
 #First Ohm law
 def law_Ohm1(resistance,currentIntensity):
-    print(resistance*currentIntensity)
+    return resistance*currentIntensity
 
 #Second Ohm law
 def law_Ohm2(resistivity,length,area):
-    print(resistivity*lenght/area)
+    return resistivity*lenght/area
 
 #Joule law
 def law_Joule(resistance,currentIntensity):
-    print(resistance*(currentIntensity**2))
+    return resistance*(currentIntensity**2)
 
 #Magnetic Induction module
 def magnetic_induct(magneticForce,currentIntensity,length):
-    print(magneticForce/(currentIntensity*length))
+    return magneticForce/(currentIntensity*length)
 
 #Ampere law
 def law_Ampere(currentInt1,currentInt2,length,distance):
-    print((PROPORTION_CONST*currentInt1*currentInt2*length)/distance)
+    return (PROPORTION_CONST*currentInt1*currentInt2*length)/distance
 
 #Energetic Density Mean 
 def energ_DensM(wavingElectricFieldWidth):
-    print((1/2)*DIELECTRIC*(wavingElectricFieldWidth**2))
+    return (1/2)*DIELECTRIC*(wavingElectricFieldWidth**2)
 
 #Relativistic time (Expansion of times)
 def relativ_Time(travelerTime,speed):
-    print(travelerTime/((1-((speed**2)/(LIGHT**2)))**(0.5)))
+    return travelerTime/((1-((speed**2)/(LIGHT**2)))**(0.5))
 
 #Lorentz factor
 def lorentz_factor(speed):
-    print(1/((1-((speed**2)/(LIGHT**2)))**(0.5)))
+    return 1/((1-((speed**2)/(LIGHT**2)))**(0.5))
 
 #Relativistic distance (Compression of distances)
 def relativ_Dist(nonTravelerDistance,speed):
-    print(((1-(speed**2/LIGHT**2))**(0.5))*nonTravelerDistance)
+    return ((1-(speed**2/LIGHT**2))**(0.5))*nonTravelerDistance
 
 #Relativistic Mass (Increment of Mass)
 def relativ_Mass(travelerMass,speed):
-    print(travelerMass/((1-((speed**2)/(LIGHT**2)))**(0.5)))
+    return travelerMass/((1-((speed**2)/(LIGHT**2)))**(0.5))
 
 #Relativistic Momentum (Increment of Momentum)
 def relativ_Momen(travelerMomentum,speed):
-    print((travelerMomentum*speed)/((1-((speed**2)/(LIGHT**2)))**(0.5)))
+    return (travelerMomentum*speed)/((1-((speed**2)/(LIGHT**2)))**(0.5))
 
 #Relative Energy
 def relativ_Energ(travelerEnergy,speed):
-    print((travelerEnergy*(LIGHT**2))/((1-((speed**2)/(LIGHT**2)))**(0.5)))
+    return (travelerEnergy*(LIGHT**2))/((1-((speed**2)/(LIGHT**2)))**(0.5))
 
 #Quantic energy
 def quantic_En(frequence):
-    print(PLANCK*frequence)
+    return PLANCK*frequence
 
 #Created by me, Gabriele Gatti, hope you like it
 if __name__ == '__main__':
